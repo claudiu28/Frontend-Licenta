@@ -10,7 +10,7 @@ import {
     Shield,
     UserPlus as UserPen,
     Home,
-    Waypoints,
+    Waypoints, Tags, ChartBarStacked, TableOfContents, NotebookTabs,
 } from "lucide-react"
 
 export const getNavigationItems = (username?: string) => [
@@ -86,7 +86,7 @@ export const getNavigationItems = (username?: string) => [
     },
     {
         name: "Daily Inspiration",
-        href: "/utils",
+        href: "/daily",
         icon: Lightbulb,
         description: "Quotes & Tips",
         color: "bg-yellow-500",
@@ -98,4 +98,39 @@ export const getNavigationItems = (username?: string) => [
         description: "System Management",
         color: "bg-slate-600",
     },
+    {
+        name: "Tags",
+        href: "/tags",
+        icon: Tags,
+        description: "Tags Management",
+        color: "bg-teal-600",
+    },
+    {
+        name: "Categories",
+        href: "/categories",
+        icon: ChartBarStacked,
+        description: "Categories Management",
+        color: "bg-orange-600",
+    },
+    {
+        name: "Content Management",
+        href: "/content",
+        icon: TableOfContents,
+        description: "Content Management Lesson",
+        color: "bg-indigo-600",
+    },
+    {
+        name: "Lessons Management",
+        href: "/lessons",
+        icon: BookOpen,
+        description: "Management Lessons",
+        color: "bg-red-600",
+    },
+    {
+        name: "Modules Management",
+        href: "/modules",
+        icon: NotebookTabs,
+        description: "Modules Lessons",
+        color: "bg-pink-600",
+    }
 ]
